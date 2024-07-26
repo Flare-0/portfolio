@@ -21,3 +21,35 @@
     width: 70px;
     margin: 50px;
   }
+
+  .linkCont{
+    display: flex;
+    flex-direction: row;
+    position:relative ;
+    left: 0;
+  }
+  .linkCont > p{
+    margin: 10px;
+    font-weight: 550;
+    font-family: consolas;
+  }
+  .linkCont > p:hover::after {
+    content: " ";
+    height: 2.5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: var(--background-color);
+    animation: underlineAnimationP 400ms ease-in-out;
+    width: 0; /* Ensures the animation starts from 0 width */
+  }
+  
+  @keyframes underlineAnimationP {
+    0% { width: 0; }
+    50% { width: 7.5px; }
+    100% { width: 15px; }
+  }
+  
