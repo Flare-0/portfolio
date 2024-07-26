@@ -1,0 +1,64 @@
+/* Color Variables */
+:root {
+  --background-color: #010008;
+  --foreground-color: #f1f8ff;
+
+}
+
+/* General Styles */
+body {
+  background-color: var(--background-color);
+  font-family: "Inter";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+}
+
+/* Scroll Container */
+.V_scroll_container {
+  margin-top: 12vh;
+  display: flex;
+  max-height: 88vh;
+  overflow-x: scroll; /* Enable horizontal scrolling */
+  overflow-y: wrap; /* Disable vertical scrolling */
+  white-space: nowrap; /* Prevent wrapping of content */
+  scroll-behavior: smooth; /* Optional: smooth scrolling */
+}
+
+/* Custom Mouse Pointer */
+.mousePointer {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--foreground-color);
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 99999;
+  mix-blend-mode: difference;
+}
+
+/* Section One */
+.sectionOne {
+  display: flex;
+  flex-direction: column;
+  margin-right:40vw;
+}
+
+/* Div Styles */
+.ddiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.div1 {
+  height: 150px;
+  width: 400px;
+  background-color: var(--foreground-color);
+  margin: 10px;
+}
+
+

@@ -1,0 +1,45 @@
+
+/* Paragraph One */
+.paraOne {
+    width: max-content;
+    font-weight: 650;
+    font-size: 1.8em;
+    color: var(--foreground-color);
+    margin: auto;
+  }
+  
+  .paraOne span {
+    position: relative;
+    display: inline-block;
+    white-space: pre;
+  }
+  
+  .paraOne:hover > span {
+    animation: randomMove 800ms forwards;
+  }
+  
+  @keyframes randomMove {
+    0% { transform: translate(0, 0); }
+    40% { transform: translate(var(--random-x), var(--random-y)); }
+  }
+  
+  .paraOne:hover > span::after {
+    content: " ";
+    height: 2.5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: var(--foreground-color
+    );
+    animation: underlineAnimation 800ms;
+  }
+  
+  @keyframes underlineAnimation {
+    20% { width: 3px; }
+    80% { width: 15px; }
+    100% { width: 15px; }
+  }
+  

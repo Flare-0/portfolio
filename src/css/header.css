@@ -1,0 +1,23 @@
+.mainHeaderCont{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  .headerCont{
+    width: calc(100vw);
+    height: 12vh;
+    background-color: var(--foreground-color);
+    display: flex;
+    align-items: center;
+    
+  }
+  .logoImg{
+    width: 70px;
+    margin: 50px;
+  }
