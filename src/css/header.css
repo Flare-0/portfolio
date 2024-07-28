@@ -33,23 +33,30 @@
     font-weight: 550;
     font-family: consolas;
   }
-  .linkCont > p:hover::after {
-    content: " ";
-    height: 2.5px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    background-color: var(--background-color);
-    animation: underlineAnimationP 400ms ease-in-out;
-    width: 0; /* Ensures the animation starts from 0 width */
+  .linkCont p {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 5px 0;
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
   }
   
-  @keyframes underlineAnimationP {
-    0% { width: 0; }
-    50% { width: 7.5px; }
-    100% { width: 15px; }
+  .linkCont p::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    left: 50%;
+    bottom: 0;
+    transition: width 0.4s ease, left 0.4s ease;
   }
+  
+  .linkCont p:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
   
