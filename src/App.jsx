@@ -3,6 +3,7 @@ import Herotext from './comp/Herotext'
 import Cursor from './comp/Cursor'
 import Header from './comp/Header'
 import './css/App.css'
+import "./css/scrollbar.css"
 // import './Text.css'
 function App() {
 

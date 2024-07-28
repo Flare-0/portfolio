@@ -46,7 +46,7 @@ body {
 .sectionOne {
   display: flex;
   flex-direction: column;
-  margin-right:40vw;
+  margin-right:25vw;
 }
 
 /* Div Styles */
