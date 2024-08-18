@@ -1,31 +1,15 @@
-/* Color Variables */
 :root {
   --background-color: #010008;
   --foreground-color: #f1f8ff;
-
 }
-
-/* General Styles */
 body {
   background-color: var(--background-color);
-  font-family: "Inter";
+  font-family: "Outfit", sans-serif;
 }
-
 * {
   margin: 0;
   padding: 0;
 }
-
-/* Scroll Container */
-.V_scroll_container {
-  margin-top: 12vh;
-  display: flex;
-  white-space: nowrap; /* Prevent wrapping of content */
-  scroll-behavior: smooth; /* Optional: smooth scrolling */
-  padding: 0rem 2rem 0rem 4vw ;
-}
-
-/* Custom Mouse Pointer */
 .mousePointer {
   width: 14px;
   height: 14px;
@@ -37,11 +21,12 @@ body {
   z-index: 99999;
   mix-blend-mode: difference;
 }
-
 .sectionOne {
   display: flex;
   flex-direction: column;
-  margin-right:128px;
+}
+.sectionOne .paraOne{
+  margin-top: 32px;
 }
 
 

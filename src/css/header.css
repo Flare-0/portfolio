@@ -1,24 +1,28 @@
 .mainHeaderCont {
-  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 12px;
 }
 
 .headerCont {
-  width: 100vw;
-  height: 12vh;
-  background-color: var(--foreground-color);
+  width: 50vw;
+  height: 42px;
+  padding: 8px;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Update this line */
+  justify-content: space-between; 
+  border-radius: 16px; 
+  background-color: #f1f8fffb; 
+  border: 1px solid #000;
+  
+  
 }
-
 .logoImg {
-  width: 70px;
+  width: 64px;
   margin: 4vw;
 }
 
